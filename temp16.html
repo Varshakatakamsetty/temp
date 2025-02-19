@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let users = [];
+function d(){
+    
+let dp=`
+    <h1>WELCOME!</h1>
+    <p><button onclick="showLogin()">logout</button>
+
+`
+root.innerHTML=dp
+   
+
+}
+    
+    function showForm(){
+
+let a =` <div>
+             <h2> Registration Form</h2>
+             <p><input type="text" id = "name" placeholder="name"></p>
+             <p><input type="password" id = "password" placeholder="password"></p>
+             <p><input type = "mail id" = email" placeholder = "email"></p>
+             <p><input type = "datetime-local" = id = "DOB" placeholder = "DOB"></p>
+             <p><button onclick=addUser name>submit</button></p>
+</div>
+`
+root.innerHTML=a
+}
+    function showLogin(){
+
+        let str =`
+        <div>
+            <h2> Login Form</h2>
+            <p><input type="text"></p>
+            <p><input type="password"></p>
+            <button  onclick = "d()">Log In</button> <br>
+            <p><button onclick = "showForm()">create account</button></p
+            </div>`
+
+        root.innerHTML = str
+    }
+</script>
+<body onload = "showLogin()">
+    <div id="root"></div>
+</body>
+</html>
