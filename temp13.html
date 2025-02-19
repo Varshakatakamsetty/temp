@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
     <script>
-        let products =[
-            {
-                id:1,
-                name: "Product 1",
-                price:45,
-                desc:"This is the description of the product",
-                url:"https://picsum.photos/200/300",
-            },
-            {
-                id:2,
-                name: "Product 2",
-                price:50,
-                desc:"This is the description of the product",
-                url:"https://picsum.photos/200/300",
-            },
-            {
-                id:3,
-                name: "Product 3",
-                price:75,
-                desc:"This is the description of the product",
-                url:"https://picsum.photos/200/300",
-            },
-        ];
+      //   let names = ["John", "Cathy"];
+      //   names.push("Mike");
+      //   console.log(names);
+      let names = [];
+      function add() {
+        let name = document.getElementById("name").value;
+        names.push(name);
+        let str = ""
+        names.map(value=>{
+            str = str + value + "<br>"
+        })
+        data.innerHTML = str
+      }
     </script>
-    <body>
-        <div id="data"></div>
-</body>
+  </head>
+  <body>
+    <h1>Data Entry Form</h1>
+    <input type="text" id="name" placeholder="Enter Name" />
+    <button onclick="add()">Add</button>
+    <div id="data"></div>
+  </body>
 </html>

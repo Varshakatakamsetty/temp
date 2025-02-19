@@ -6,24 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-   <script>
-    // let names=["Varsha","Dakshita"]
-    // names.push("Mike")
-    // console.log(names)
-    let names = [];
-    function add(){
-        let name = docment.getElementById("name").value;
-        names.push(name);
-        str = ""
-        names.map(value=>{
-            str = str +value + "<br>"
+    <script>
+        // let i=1
+        // while (i<5){
+        //     console.log(i)
+        //     i=i+1
+        // }
+        // for(let i=1;i<5;i++){
+        //     console.log(i)
+        // }
+        // let fruits=["apple","mango","orange"]
+        // for(let i=0;i<3;i++){
+        //     console.log(fruits[i])
+        // }
+        let vegetables=["carrot","beans","potato"]
+        vegetables.map((value)=>{
+            console.log(value)
         })
-        data.innerHTML = str
-    }
-   </script>
+    </script>
 </body>
-<h1> Data Entry Form</h1>
-<input type="text" id="name" placeholder="Enter Name">
-<button onclick="add()">add</button>
-<div id="data"></div>
 </html>
